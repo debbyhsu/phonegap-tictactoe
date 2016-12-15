@@ -3,22 +3,22 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "com.gamingplatform.tictactoe"
-        versionCode = "201"
-        version     = "201.0.0" >
+        id          = "com.gamingplatform.playmatching"
+        versionCode = "0"
+        version     = "0.0.0" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>20100</string>
+      <string>000</string>
     </gap:config-file>
 
-    <content src="https://tictactoe.ygame.us/?phonegapPlugins=v103" />
+    <content src="https://playmatching.us/?phonegapPlugins=v103" />
     
-    <name>Tic Tac Toe</name>
-    <author email="yoav.zibin@gmail.com">
-        yoav.zibin@gmail.com
+    <name>Play Matching</name>
+    <author email="debby.hi@gmail.com">
+        debby.hi@gmail.com
     </author>
 
     <preference name="android-build-tool" value="gradle" />
@@ -111,8 +111,8 @@
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->
     <gap:plugin name="cordova-plugin-facebook4" source="npm" spec="1.7.3">
-        <param name="APP_ID" value="1505618116376825" />
-        <param name="APP_NAME" value="Tic Tac Toe" />
+        <param name="APP_ID" value="616127551906672" />
+        <param name="APP_NAME" value="Play Matching" />
     </gap:plugin>
 
     <!--
@@ -165,7 +165,7 @@
     <!-- https://github.com/EddyVerbruggen/Custom-URL-scheme -->
     <preference name="AndroidLaunchMode" value="singleInstance" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm" spec="4.2.0" >
-      <param name="URL_SCHEME" value="tictactoe" />
+      <param name="URL_SCHEME" value="playmatching" />
     </gap:plugin>
 
     <!-- We have to use this if we want native ads (can't use mediation for that):
